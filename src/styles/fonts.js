@@ -3,3 +3,4 @@ export default {
   regular: 14,
   small: 12,
 }
+
