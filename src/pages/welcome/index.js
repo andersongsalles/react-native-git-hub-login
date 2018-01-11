@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { NavigationActions } from 'react-navigation';
 import PropTypes from 'prop-types';
-import api from '../../services/api';
-
+import { NavigationActions } from 'react-navigation';
 /* Presentation */
 import {
   View,
@@ -12,7 +10,7 @@ import {
   AsyncStorage,
   ActivityIndicator,
 } from 'react-native';
-
+import api from '../../services/api';
 import styles from './styles';
 
 
