@@ -14,6 +14,8 @@ const createRootNavigator = (userExists = false) =>
         Repositories: { screen: Repositories },
         Organizations: { screen: Organizations },
       }, {
+        swipeEnabled: true,
+        animationEnabled: true,
         tabBarPosition: 'bottom',
         tabBarOptions: {
           showLabel: false,
@@ -25,7 +27,7 @@ const createRootNavigator = (userExists = false) =>
 
           },
           indicatorStyle: {
-            opacity: 0
+            opacity: 0,
           },
         },
       }),

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+
+import Organization from './components/Organizations';
+import styles from './styles';
 
 export default class Organizations extends Component {
 
@@ -12,9 +15,21 @@ export default class Organizations extends Component {
 
   render() {
     return (
-      <View>
-        <Text>Orgs</Text>
-      </View>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={styles.contentContainer}
+      >
+        <Organization />
+        <Organization />
+        <Organization />
+        <Organization />
+        <Organization />
+        <Organization />
+        <Organization />
+        <Organization />
+
+
+      </ScrollView>
     );
   }
 }
